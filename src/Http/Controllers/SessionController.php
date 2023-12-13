@@ -45,7 +45,7 @@ class SessionController extends Controller
     public function handleCallback()
     {
         try {
-            if (!AzureConfigHelper::isConfigured()) {
+            if (!GoogleConfigHelper::isConfigured()) {
                 return view('google-auth::errors.config');
             }
 

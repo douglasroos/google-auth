@@ -49,7 +49,7 @@ class ConfigureGoogle extends Command
             required: true
         );
 
-        $this->updateEnvFile('GOOGLE_AUTHORIZED_DOMAIN_ID', $authorizedDomain);
+        $this->updateEnvFile('GOOGLE_AUTHORIZED_DOMAIN', $authorizedDomain);
 
         Artisan::call('optimize');
         
