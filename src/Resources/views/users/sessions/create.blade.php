@@ -103,7 +103,7 @@
                         
                         <div class="flex items-center justify-center">
                             <a 
-                                href="{{ route('azure.authenticate') }}"
+                                href="{{ route('google.authenticate') }}"
                                 class="inline-flex items-center mt-3 mb-4 px-[14px] py-[6px] bg-white border border-black-400 border-black rounded-[6px] text-gray-500 font-bold cursor-pointer shadow-sm hover:bg-gray-100 transition-all"
                             >
                             <img 

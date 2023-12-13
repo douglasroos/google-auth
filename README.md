@@ -58,7 +58,7 @@ If you don't have these credentials, you can obtain them at [https://portal.azur
 
 3. Open your admin panel you should see the option to Sign in with Google
 
-![example](docs/bagisto-signin.png)
+![example](docs/bagisto-signin.jpg)
 
 ## Support
 
