@@ -24,11 +24,11 @@ class SessionController extends Controller
     }
 
     /**
-     * Redirect the user to the Azure authentication page.
+     * Redirect the user to the Google authentication page.
      *
      * @return \Illuminate\Http\RedirectResponse
      */
-    public function redirectToAzure()
+    public function redirectToGoogle()
     {
         if (!GoogleConfigHelper::isConfigured()) {
             return view('google-auth::errors.config');
@@ -38,7 +38,7 @@ class SessionController extends Controller
     }
 
     /**
-     * Handle the callback from Azure.
+     * Handle the callback from Google.
      *
      * @return \Illuminate\Http\RedirectResponse
      */
@@ -85,7 +85,7 @@ class SessionController extends Controller
 
             return redirect()->route('admin.dashboard.index');
         } catch (\Exception $e) {
-            Log::error('Azure Authentication Error: ' . $e->getMessage());
+            Log::error('Google Authentication Error: ' . $e->getMessage());
 
             return redirect()->route('admin.session.create')->with('warning', __('google-auth::app.auth-error'));
         }

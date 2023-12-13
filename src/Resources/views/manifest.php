@@ -1,6 +1,6 @@
 <?php
 
 return [
-    'name'    => 'Bagisto Azure Auth',
+    'name'    => 'Bagisto Google Auth',
     'version' => '1.0'
 ];
