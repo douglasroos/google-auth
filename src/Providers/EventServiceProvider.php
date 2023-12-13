@@ -1,6 +1,6 @@
 <?php
 
-namespace Bagisto\AzureAuth\Providers;
+namespace Bagisto\GoogleAuth\Providers;
 
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 use SocialiteProviders\Manager\SocialiteWasCalled;
