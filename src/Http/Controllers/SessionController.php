@@ -51,6 +51,10 @@ class SessionController extends Controller
 
             $user = Socialite::driver('google')->user();
 
+            if (config('services.google.domain') !== $user->getHostedDomain()) {
+                return redirect()->route('admin.session.create')->with('warning', __('google-auth::app.auth-error'));
+            }
+
             $localUser = $this->adminRepository->where('email', $user->getEmail())->first();
 
             if (!$localUser) {

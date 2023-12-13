@@ -44,12 +44,12 @@ class ConfigureGoogle extends Command
 
         $this->updateEnvFile('GOOGLE_REDIRECT_URL', route('google.callback'));
 
-        $tenantId = text(
-            label: 'Please enter your tenant ID',
+        $authorizedDomain = text(
+            label: 'Please enter your authorized domain  ie (example.com)',
             required: true
         );
 
-        $this->updateEnvFile('GOOGLE_TENANT_ID', $tenantId);
+        $this->updateEnvFile('GOOGLE_AUTHORIZED_DOMAIN_ID', $authorizedDomain);
 
         Artisan::call('optimize');
         
@@ -65,7 +65,7 @@ class ConfigureGoogle extends Command
     {
         return env('GOOGLE_CLIENT_ID') !== null
             && env('GOOGLE_CLIENT_SECRET') !== null
-            && env('GOOGLE_TENANT_ID') !== null;
+            && env('GOOGLE_AUTHORIZED_DOMAIN') !== null;
     }
 
     protected function updateEnvFile($key, $value)
