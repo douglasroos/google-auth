@@ -1,0 +1,36 @@
+{
+    "name": "douglasroos/google-auth",
+    "type": "library",
+    "description": "Enable SSO for your Bagisto admin panel with Google Account",
+    "keywords": ["bagisto", "admin", "google", "authentication", "sso"],
+    "homepage": "https://github.com/douglasroos/admin-google-auth",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Douglas Roos",
+            "email": "douglasroos2@gmail.com"
+        }
+    ],
+    "require": {
+        "laravel/prompts": "^0.1.12",
+        "laravel/socialite": "^5.0",
+        "socialiteproviders/google": "^4.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bagisto\\GoogleAuth\\": "src/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bagisto\\GoogleAuth\\Providers\\GoogleAuthServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
