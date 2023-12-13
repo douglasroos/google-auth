@@ -1,6 +1,6 @@
 <?php
 
-namespace Bagisto\AzureAuth\Providers;
+namespace Bagisto\GoogleAuth\Providers;
 
 use Bagisto\GoogleAuth\Console\Commands\ConfigureGoogle;
 use Bagisto\GoogleAuth\Providers\EventServiceProvider;
