@@ -8,6 +8,8 @@
     <img alt="GitHub license" src="https://img.shields.io/github/license/bagisto-europe/admin-azure-auth">
 </div>
 
+## THIS REPOSITORY HAS BEEN CREATED FROM THE ORIGINAL ONE FOR AZURE [https://github.com/bagisto-europe/admin-azure-auth](https://github.com/bagisto-europe/admin-azure-auth)
+
 With this package, you can integrate Google Account Single Sign-On (SSO) into the Bagisto admin panel.  
 When using Google Account SSO for your Bagisto eCommerce Admin Authentication, you benefit from the following features.
 
@@ -42,13 +44,13 @@ See [Changelog](CHANGELOG.md) for details on what has changed in each version.
 1. Install the package using Composer
 
 ```bash
-    composer require bagisto-eu/azure-auth
+    composer require bagisto-eu/google-auth
 ```
 
 2. Run the following command to configure your credentials
 
 ```bash
-    php artisan azure:configure
+    php artisan google:configure
 ```
 
 During the configuration, you will be prompted to enter your Client ID, Client Secret, and Tenant ID.  
